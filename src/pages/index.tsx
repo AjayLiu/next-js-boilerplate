@@ -1,12 +1,5 @@
 import Head from 'next/head'
-// import Header from '@components/Header'
 import Footer from '@components/Footer'
-import LandingPage from '@components/LandingPage'
-import About from '@components/About'
-import Projects from '@components/Projects'
-import Skills from '@components/Skills'
-import Contact from '@components/Contact'
-import FAQ from '@components/FAQ'
 import GoogleAnalyticsHook from '@components/GoogleAnalyticsHook'
 
 const Home: React.FC = () => {
@@ -29,16 +22,10 @@ const Home: React.FC = () => {
         <meta property="og:image" content="https://ajayliu.com/imgs/ajayliudark.png" />
         <meta property="og:description" content="My name is Ajay Liu and I love creating things!" />
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
       </Head>
 
       <main>
-        <LandingPage />
-        <About />
-        <Projects />
-        <Skills />
-        <Contact email="contact@ajayliu.com"/>
-        <FAQ />
+       
       </main>
 
       <Footer />
