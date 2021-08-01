@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./Footer.module.scss";
 const Footer: React.FC = () => {
   const imgPath = "https://ajayliu.com/img";
+  // MAKE SURE TO CHANGE THIS LINK BELOW
+  const projectRepoLink = "https://github.com/AjayLiu/";
   return (
     <>
       <footer className={styles.footer}>
@@ -24,6 +26,12 @@ const Footer: React.FC = () => {
           </a>
           <a href="https://www.youtube.com/channel/UClr6XCaguPeM0g7UL6Lvs3g">
             <img src={imgPath + "/youtube.svg"} alt="youtube logo" />
+          </a>
+        </div>
+        <div className={styles.repo}>
+          <a href={projectRepoLink} className={styles.repoAnchor}>
+            <img src={imgPath + "/repo.svg"} />
+            View this project on Github
           </a>
         </div>
       </footer>
